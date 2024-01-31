@@ -1,0 +1,102 @@
+<!--WHAT IS EMMET ?
+    It is a software plugin or extension which is by default
+    available in vs code it is used in html to write code speedly
+
+    1) suppose we need image in a paragraph -- p>img
+    2) for so many paragraph inside paragraph --p>p>p>p
+    3) suppose we want two tag bt not nested --eg article+section
+    4) suppose we want to insert content in a paragraph or heading or article -- p{this is my content}
+    5) creating -- p#id1   
+    6) p#nitesh -- <p id="Issac Newton"> </p>
+    7) p.hello  -- <p class="hello"> </p>
+    8) article.cars -- article class="cars"> </article>
+    9) a{click here} -- <a href="">click here</a>
+    10) p>ul>li*5 -- <p>
+                        <ul>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </p>
+    11) p+article+section -- <p></p>
+                            <article></article>
+                            <section></section>
+    12) section>p+p+p -- <section>
+                                <p></p>
+                                <p></p>
+                                <p></p>
+                        </section>
+    13) table>tr>td*3 -- <table>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </table> 
+    14) header+main+fotter -- <header></header>
+                            <main></main>
+                            <fotter></fotter>
+    15) DIV tag : doesn't provide any sematic meaning. it used for wrapping/container
+        div.container -- <div class="container"></div>
+-->
+<!--
+    BLOCK ELEMENT            INLINE ELEMNET
+    >> take space from       >> take space
+        left to right            a/q to space
+    >> eg: div,paragraph     >> span
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container"></div>
+    <div style="background-color: aqua;">this is my div tag, it take space from left to write</div>
+    <span style="background-color: yellow;">this is my span tag, it take space a/q to the space</span>
+
+    <!--ul>(li>p>a)*7-->
+    <ul>
+    <li>
+        <p><a href="">A</a></p>
+    </li>
+    <li>
+        <p><a href="">B</a></p>
+    </li>
+    <li>
+        <p><a href="">C</a></p>
+    </li>
+    <li>
+        <p><a href="">D</a></p>
+    </li>
+    <li>
+        <p><a href="">E</a></p>
+    </li>
+    <li>
+        <p><a href="">F</a></p>
+    </li>
+    <li>
+        <p><a href="">G</a></p>
+    </li>
+    </ul>
+    <!--nav>ul>(li>a)*4-->
+    <nav>
+    <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Login</a></li>
+        <li><a href="">Contact us</a></li>
+    </ul>
+    </nav>
+    <a href="https://www.thecodehelp.in">chalo code help</a>
+    <!-- HOW TO MAIL -->
+    <a href="mailto:issacnewton802183@gmail.com">Email us</a>
+    <!-- HOW TO TELEPHONE CALL-->
+    <a href="tel:6263736831">Call us</a>
+</body> 
+</html>
