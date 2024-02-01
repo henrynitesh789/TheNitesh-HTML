@@ -1,0 +1,105 @@
+
+<!-- form tag -- to create html form for user input
+    input tag -- for user input 
+    label tag -- use to attached text in the field of input
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <!-- Place holder -- faded text in the box is called placehoder-->
+        <label for="email">Enter Email ID:</label>
+        <input type="text" id="email" placeholder="enter your email here:">
+        <br/>
+        <br/>    
+        <label for="password1   ">Enter password</label>
+        <input type="password" id="password1">
+        <br/>
+        <br/>
+        <!-- creating button -->
+        <input type="submit" value="click here">
+        <!-- other way of creating button -->
+        <button>submit</button>
+
+        <br/>
+        <br/>
+    </form>
+
+    <!-- field in  html -->
+    <form>
+        <fieldset>
+            <legend>HTML form dummy</legend>
+            <!-- date picker -->
+            <label for="datepicker">choose date</label>
+            <input type="date" id="datepicker">
+            <br/>
+            <br/>
+            <label for="selector 1">choose your dishes</label>
+
+            <!-- Dropdown creation-->
+            <select name="dishes" id="selector 1">
+                <option value="maggie">MAGGI</option>
+                <option value="chips">CHIPS</option>
+                <option value="biscuit">BISCUIT</option>
+            </select>
+            <br/>
+            <br/>
+            <!-- text area creation-->
+            <textarea name="textArea1" id="textArea1" cols="30" rows="10" placeholder="enter your text here"></textarea>
+        </fieldset>
+    </form>
+    <!-- Input Types in html
+        1) text field
+        2) button
+        3) radio button
+        4) checkbox
+        5) file select
+        6) image
+    -->
+    <form>
+        <!-- text field -->
+        <label for="textfield">Text field:</label>
+        <input type="text" name="textfield1" id="textfield">
+        <br/>
+        <br/>
+        <!-- button -->
+        <label for="button1">Text field:</label>
+        <input type="submit" name="button1" id="button1" value="sucscribe">
+        <br/>
+        <br/>
+        <!-- radio button -->
+        <label for="radio1">Male:</label>
+        <input type="radio" name="Radio1" id="radio1">
+
+        <label for="radio2">Female</label>
+        <input type="radio" name="Radio2" id="radio2">
+
+        <label for="radio3">Prefer not to say</label>
+        <input type="radio" name="Radio3" id="radio3">
+        <br/>
+        <br/>
+
+        <!-- checkbox -->
+        <label for="checkbox1">English:</label>
+        <input type="checkbox" name="checkbox1" id="checkbox1">
+    
+        <label for="checkbox2">Hindi:</label>
+        <input type="checkbox" name="checkbox2" id="checkbox2">
+        <br/>
+        <br/>
+        <!-- file select-->
+        <label for="fileselect1">uplode file</label>
+        <input type="file" name="fileselect1" id="fileselect1">
+        <br/>
+        <br/>
+        <!-- image -->
+        <input type="image" name="imageButton1" id="imageButton1" alt="click here" src="arrow1.jpg" height="20px" width="20px">
+    </form>
+    
+</body>
+</html>
