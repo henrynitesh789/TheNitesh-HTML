@@ -1,0 +1,201 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body> 
+    <!-- creating event registration form-->
+    <form>
+        <fieldset>
+            <legend><h2>Event Registration</h2></legend>
+
+            <label for="name">Name:</label>
+            <br/>
+            <input type="text" id="name">
+            <br/>
+
+            <label for="email">Email:</label>
+            <br/>
+            <input type="text" id="email">
+            <br/>
+
+            <label for="phone">Phone No:</label>
+            <br/>
+            <input type="tel" id="phone">
+            <br/>
+
+            <label for="ocupation1">Occupation:</label>
+            <select name="ocupation" id="ocupation1">
+                <option value="other">OTHER</option>
+                <option value="frontend engineer">FRONTEND ENGINEER</option>
+                <option value="ai ml">AI ML ENGINEER</option>
+                <option value="cyber security">CYBER SECURITY</option>
+                <option value="data scientist">DATA SCIENTIST</option>
+            </select>
+            <br/>
+            <br/>
+            
+            <fieldset>
+                <legend>Topic of interest</legend>
+
+                <input type="checkbox" name="checkbox 1" id="html">
+                <label for="html">HTML</label>
+                <br/>
+
+                <input type="checkbox" name="css1" id="css1">
+                <label for="css1">CSS</label>
+                <br/>
+
+                <input type="checkbox" name="javascript1" id="javascript1">
+                <label for="javascript1">JAVASCRIPT</label>
+            </fieldset>
+        
+            <br/>
+            <label for="textarea1">Comments:</label>
+            <br/>
+            <textarea name="textfield" id="textarea1" cols="30" rows="10"></textarea>
+            <input type="submit" value="Register">
+        </fieldset>
+    </form>
+
+    <!-- creating job application form -->
+    <form>
+        <h2>Job Application</h2>
+
+        <label for="name">Name:</label>
+        <br/>
+        <input type="text" id="name">
+        <br/>
+
+        <label for="email">Email:</label>
+        <br/>
+        <input type="text" id="email">
+        <br/>
+
+        <label for="phone">Phone:</label>
+        <br/>
+        <input type="tel" id="phone">
+        <br/>
+
+        <label for="file1">Resume:</label>
+        <br/>
+        <input type="file"name="file1" id="file1">
+        <br/>
+
+        <label for="experience">Experience (years):</label>
+        <br/>
+        <input type="number" name="counter" id="experience" min="0" max="50">
+
+        <fieldset>
+            <legend>Skills:</legend>
+
+            <label for="html">HTML</label>
+            <input type="checkbox" id="html" >
+            
+            <label for="css">CSS</label>
+            <input type="checkbox" id="css" >
+            
+            <label for="javascript">JAVASCRIPT</label>
+            <input type="checkbox" id="javascript" >
+        </fieldset>
+
+        <label for="education">Highest Education:</label>
+        <br/>
+        <select name="education1" id="education">
+            <option value="other">Other</option>
+            <option value="high schoolr">High school</option>
+            <option value="metric">Metric</option>
+            <option value="btech">Btech</option>
+        </select>
+        <br/>
+        <br/>
+
+        <fieldset>  
+            <legend>Availability:</legend>
+            
+            <label for="radio1">Full-Time</label>
+            <input type="radio" name="radio" id="radio1">
+            <br/>
+
+            <label for="radio2">Part-Time</label>
+            <input type="radio" name="radio" id="radio2">
+        </fieldset>
+
+        <label for="additionalComment">Additional Comments:</label>
+        <br/>
+        <textarea name="comments" id="additionalComment" cols="30" rows="10"></textarea>
+        <br/>
+        <input type="submit" value="submit application" >
+    </form>
+
+    <!-- creating another form -->
+
+    <form>
+        <h2>Complex Form</h2>
+        <fieldset>
+            <legend>Personal information</legend>
+            <label for="name">Name</label>
+            <input type="text" id="name">
+
+            <label for="email">Email</label>
+            <input type="text" id="email">
+
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone">
+
+            <label for="dob">Date of Birth</label>
+            <input type="date" id="dob">
+
+            <span>Gender:</span>
+            <input type="radio" name="radio" id="check1">
+            <label for="check1">Male</label>
+
+            <input type="radio" name="radio" id="check2">
+            <label for="check2">Female</label>
+
+            <label for="s1">Country</label>
+            <select name="country" id="s1">
+                <option value="usa">United state</option>
+                <option value="ind">India</option>
+                <option value="ussr">Russia</option>
+                <option value="french">France</option>
+                <option value="ise">Iserale</option>
+            </select>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Address</legend>
+            <label for="street">Street:</label>
+            <input type="text" name="street" id="street">
+            <br/>
+            <br/>
+            <label for="city">City:</label>
+            <input type="text" name="city" id="city">
+            <br/>
+            <br/>
+            <label for="state">State:</label>
+            <input type="text" name="state" id="state">
+            <br/>
+            <br/>
+            <label for="code">Zip code:</label>
+            <input type="text" name="code" id="code">
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Other information</legend>
+            <label for="comment">Comments</label>
+            <textarea name="comments" id="comment" cols="30" rows="10"></textarea>
+            <label for="TAC">I agree to the terms of service</label>
+            <input type="checkbox" id="TAC">
+            <br/>
+            <input type="submit" value="submit">
+        </fieldset>
+        </form>
+</body>
+</html>
+
