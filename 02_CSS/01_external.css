@@ -1,0 +1,14 @@
+/*  selectors -- selector is a way by which we can apply any style to a specfic element of html.
+        \---- element selector
+        \---- id selector
+        \---- class selector
+        \---- group selector
+*/
+
+h1{
+    font-size: smaller;
+    text-align: center;
+}
+p{
+    background-color: aquamarine;
+}
