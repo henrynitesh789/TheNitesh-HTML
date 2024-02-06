@@ -1,0 +1,86 @@
+
+<!-- TOPIC TO BE COVERED 
+    ->> CSS Position properties:
+        1) static -- by default  
+        2) relative -- changing position a/q to the current window, gap will maintained.
+            . top, left, right, bottom
+
+        3) absolute -- absolute related to its closest positioned ancestor, gap will not maintained.
+            . top, left, right, bottom
+
+        4) sticky -- sticky position remain fixed in its div tag until you change the div tag.
+        5) fixed -- even you scroll image will fixed at their position.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style> 
+        div{
+            border: 1px solid black;
+        }
+        img{
+            margin: 10px;
+        }
+        .eagle2{
+            /*position: absolute;
+            top: 100px;*/
+        }
+        .eagle4{
+            position: fixed;
+        }
+        .eagle3{
+            position: sticky;
+            top: 100px;
+        }
+        .container{
+            position: relative;
+            height: 8000px;
+            background-color: beige;
+        }
+        .box{
+            background-color: aquamarine;
+            height: 5000px;
+        }>
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img
+            class="logo1" 
+            src="arrow1.jpg" 
+            alt="logo1" 
+            width="200px" 
+            height="200px"
+        />
+
+        <img
+            class="eagle2" 
+            src="arrow2.jpeg" 
+            alt="eagle2" 
+            width="200px" 
+            height="200px"
+        />
+
+        <img
+            class="eagle3" 
+            src="arrow3.jpeg" 
+            alt="eagle3" 
+            width="200px" 
+            height="200px"
+        />
+
+        <img
+            class="eagle4" 
+            src="arrow4.jpeg" 
+            alt="eagle4" 
+            width="200px" 
+            height="200px"
+        />   
+    </div>
+    <div class="box"> </div>
+</body>
+</html>
