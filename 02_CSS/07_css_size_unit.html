@@ -1,0 +1,96 @@
+
+<!-- TOPIC TO BE COVERED 
+    ->> CSS size unit:
+        1) pn 
+        2) % 
+        3) vm (view port width)
+        4) vh (view port height)
+        5) rem 
+        6) em
+
+        What is pixel ?
+        -> Pixels are the smallest unit in a digital display. Up to millions of pixels make up an image 
+        or video on a device's screen. Each pixel comprises a subpixel that emits a red, green and blue 
+        (RGB) color, which displays at different intensities.
+
+        -> Note: Logical pixels are roughly the same visual size across devices. Physical pixels are the 
+        size of the actual hardware pixels on the device. The number of physical pixels per logical pixel
+        is described by the devicePixelRatio.
+
+        -> 1px = 1/96 inch
+
+        -> What is the difference between PPI(pixel per inch) and DPI(dots per inch? 
+            . PPI describes the resolution in pixels of a digital image 
+                it measure the pixel density of a digital image, fewer pixels give a pixelate output.
+            . whereas DPI describes the amount of ink dots on a printed image. 
+                number of dots per inch on a printed page, more DPI better the quality of image 
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            border: 2px solid red;
+            width: 25%;
+        } 
+        .parent{
+            border: 1px solid black;
+            background-color: beige;
+            width:50%;
+        }
+        .child{
+            border: 1px solid green;
+            background-color: aqua;
+            width: 20%;
+        }
+        .container{
+            border: 1px solid green;
+            background-color: beige;
+            height: 100vh;
+            width: 50vh;
+        }
+        .box1{
+            border: 1px solid black;
+            font-size:80px;
+        }
+        .wrapper{
+            font-size: 1em;
+        }
+        .wr1{
+            width: 200px;
+        }
+        .wr2{
+            width: 10vw;
+        }
+        .wr3{
+            width: 10em;
+        }
+    </style>
+</head>
+<body>
+    <div class= "box"> welcome to the coding world </div>
+    <div class="parent">
+        <div class= "child">
+            child
+        </div>
+    </div>
+
+    <div class="container"> welcome to the new world </div>
+    <div class="box1"> hello </div>
+
+    <div class="wrapper">
+        <div class= "wr1"> Always believe that something wonderful is about to happen.</div>
+        <div class= "wr2"> May be one day </div>
+        <div class= "wr3"> May be one year </div>
+    </div>
+    
+</body>
+</html>
